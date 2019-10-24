@@ -1,0 +1,22 @@
+{
+  "name": "responsiveportfoliowithsass",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio with Sass ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "Sass",
+    "Responsive",
+    "Website",
+    "Git",
+    "Github",
+    "NPM"
+  ],
+  "author": "Chigozie Okolie",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
