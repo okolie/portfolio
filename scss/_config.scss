@@ -23,7 +23,7 @@ $background-opacity: 0.9;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: rgba($primary-color, 0.5);
+        background: rgba($primary-color, $background-opacity);
       }
     }
   }
@@ -33,12 +33,28 @@ $background-opacity: 0.9;
   box-sizing: border-box;
 }
 
-body {
-  @include background;
-  background: $primary-color;
-  color: $white;
-  height: 100%;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
+// media query mixin
+@mixin media-sm {
+  //for screen 500px or less
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 769px) and(max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
 }
