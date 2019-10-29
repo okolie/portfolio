@@ -1,9 +1,21 @@
 // widescreens
 @include media-xl {
+  // main {
+  //   min-height: calc(100vh - 60px);
+  // }
+  // footer {
+  //   height: 60px;
+  // }
 }
 
 // Desktops & laptops
 @include media-lg {
+  main {
+    min-height: calc(100vh - 60px);
+  }
+  footer {
+    height: 60px;
+  }
 }
 
 // Tablets & Small Laptops
@@ -28,6 +40,7 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
   .menu-nav {
     height: 65vh;
     transform: translate3d(-100%, 0, 0);
@@ -40,6 +53,20 @@
       background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+    .bio-image {
+      margin-top: 1em;
     }
   }
 }

@@ -28,3 +28,6 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// footer copyright
+document.getElementById("main-footer").innerHTML += new Date().getFullYear();
