@@ -47,8 +47,6 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
-  //   margin-left: 2 rem;
   min-height: calc(100vh - 60px);
   .icon {
     margin-top: 1rem;
@@ -66,6 +64,14 @@ main {
       margin-top: 20vh;
     }
   }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
 }
 
 .about-info {
@@ -166,13 +172,6 @@ main {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
-}
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 60px;
 }
 
 // .text-secondary {
